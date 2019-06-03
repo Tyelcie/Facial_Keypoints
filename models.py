@@ -27,6 +27,7 @@ class Net(nn.Module):
         self.conv3 = nn.Conv2d(128, 256, 2)
         self.conv4 = nn.Conv2d(256, 512, 2)
         self.conv5 = nn.Conv2d(512, 1024, 2)
+#         self.pool = nn.MaxPool2d(2, 2)
         self.pool = nn.AvgPool2d(2, 2)
         self.fc1 = nn.Linear(25600, 12800)
         self.fc2 = nn.Linear(12800, 136)
